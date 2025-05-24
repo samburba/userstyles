@@ -1,0 +1,146 @@
+/* ==UserStyle==
+@name           problemkaputt dark
+@namespace      github.com/samburba/usersyle/darkmode/problemkaputt
+@version        1.0.0
+@description    darkmode for problemkaputt.de
+@author         samburba
+==/UserStyle== */
+@-moz-document domain("problemkaputt.de") {
+    /* Base Typography and Layout */
+    body,
+    h2 {
+        font-size: 12px;
+    }
+
+    pre,
+    h3 {
+        font-size: 11px;
+    }
+
+    h1,
+    h2,
+    h3 {
+        display: inline;
+        padding: 0;
+    }
+
+    h1 {
+        font-weight: normal;
+    }
+
+    h2,
+    h3 {
+        font-weight: bold;
+    }
+
+    body,
+    h1,
+    h2 {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    pre,
+    h3 {
+        font-family: monospace, "Courier New", Courier;
+    }
+
+    body {
+        max-width: 50em;
+        margin: auto;
+        padding: 1rem;
+        background-color: #121212;
+        color: #e0e0e0;
+    }
+
+    /* Additional Dark Mode Enhancements */
+    pre {
+        background-color: #1e1e1e;
+        color: #dcdcdc;
+        padding: 0.5em;
+        border-radius: 4px;
+        overflow-x: auto;
+    }
+
+    a {
+        color: #80cbc4;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+    /* Dark Mode Table Styling */
+    body {
+        background-color: #121212;
+        /* dark background */
+        color: #e0e0e0;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        max-width: 50em;
+        margin: auto;
+        padding: 1rem;
+    }
+
+    h1 {
+        font-weight: normal;
+        display: inline;
+        padding: 0;
+    }
+
+    h2,
+    h3 {
+        font-weight: bold;
+        display: inline;
+        padding: 0;
+    }
+
+    h3 {
+        font-family: monospace, "Courier New", Courier;
+        font-size: 11px;
+    }
+
+    pre {
+        font-family: monospace, "Courier New", Courier;
+        font-size: 11px;
+        background-color: #1e1e1e;
+        color: #dcdcdc;
+        padding: 0.5em;
+        border-radius: 4px;
+        overflow-x: auto;
+    }
+
+    /* 📌 FIXED: Table Styling for Contrast */
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        color: #e0e0e0;
+        background-color: #1c1c1c;
+        /* distinct table bg */
+        margin-bottom: 1em;
+    }
+
+    th,
+    td {
+        text-align: left;
+        border: 1px solid #333;
+        /* clearer borders */
+        padding: 0.5em;
+        background-color: #2a2a2a;
+        /* fix grey-on-grey */
+    }
+
+    th {
+        background-color: #333;
+        /* distinguish headers */
+    }
+
+    tr:nth-child(even) {
+        background-color: #252525;
+        /* subtle striping */
+    }
+
+    tr:hover {
+        background-color: #383838;
+        /* optional hover effect */
+    }
+}
