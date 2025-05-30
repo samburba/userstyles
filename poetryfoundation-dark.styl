@@ -1,0 +1,76 @@
+/* ==UserStyle==
+@name           poetryfoundation darkmode
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    darkmode for poetryfoundation.org
+@author         samburba
+==/UserStyle== */
+@-moz-document domain("poetryfoundation.org") {
+    /* Set the global background color to deep dark navy */
+    :root {
+        --background-color: #0b0d17;
+        --text-color: #e0e0e0;
+        --highlight-color: #ff5252;
+    }
+
+    body,
+    header,
+    footer,
+    nav,
+    section,
+    div,
+    main,
+    article,
+    aside {
+        background-color: var(--background-color) !important;
+        color: var(--text-color);
+    }
+
+    /* Ensure transparent components don't override background */
+    *,
+    ::before,
+    ::after {
+        background-color: transparent !important;
+        border-color: #444;
+    }
+
+    /* Header-specific overrides */
+    header,
+    .o-site-header,
+    .z-30.top-0.fixed.w-full {
+        background-color: var(--background-color) !important;
+    }
+
+    /* Optional: Adjust the highlight (red) to be consistent across elements */
+    a,
+    a:hover,
+    button,
+    .button,
+    .highlight {
+        color: var(--highlight-color);
+        border-color: var(--highlight-color);
+    }
+
+    button {
+        color: #f2f2f2 !important;
+        /* Light gray for better contrast */
+    }
+
+    button:hover,
+    button:focus-visible,
+    button[data-state="open"] {
+        color: #ff3b3b !important;
+        /* Keep hover/focus/open state red */
+        text-decoration: underline;
+    }
+
+    /* Optional: Override any white background utility classes */
+    .bg-white {
+        background-color: var(--background-color) !important;
+    }
+
+    /* SVG logo path fill adjustment */
+    .logo path {
+        fill: var(--highlight-color) !important;
+    }
+}
